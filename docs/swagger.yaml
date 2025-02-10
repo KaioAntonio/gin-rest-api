@@ -1,0 +1,21 @@
+info:
+  contact: {}
+paths:
+  /alunos:
+    post:
+      description: Retorna um JSON com o aluno criado
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            items:
+              additionalProperties:
+                type: string
+              type: object
+            type: array
+      summary: cria novo aluno
+      tags:
+      - Alunos
+swagger: "2.0"

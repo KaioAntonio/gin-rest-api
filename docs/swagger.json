@@ -1,0 +1,34 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "contact": {}
+    },
+    "paths": {
+        "/alunos": {
+            "post": {
+                "description": "Retorna um JSON com o aluno criado",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Alunos"
+                ],
+                "summary": "cria novo aluno",
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
